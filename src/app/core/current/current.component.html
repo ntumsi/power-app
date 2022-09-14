@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Current</h1>
+  <form [formGroup] = "currentForm" (ngSubmit)="submit()">
+    <div class = "form-group">
+        <label for="voltage">Voltage</label>
+        <input type="text" name="voltage" class="form-control" placeholder="Enter Voltage" formControlName="voltage">
+    </div>
+    <pre></pre>
+     <div class = "form-group">
+        <label for="resistance">Resistance</label>
+        <input type="text" name="resistance" class="form-control" placeholder="Enter Voltage" formControlName="resistance">
+    </div>
+    <pre></pre>
+    <button class="btn btn-primary">Submit</button>
+  </form>
+  <pre></pre>
+     <div class = "jumbotron">
+            <h1 class="display-4">Current Value:{{submit()}} A</h1>
+      </div>
+  
+</div>

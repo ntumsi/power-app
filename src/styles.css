@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.css";
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-card-footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  padding-top: 200;
+}
+*{
+  box-sizing: border-box;
+}
+mat-card-content{
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+}
+hr{
+  color:red;
+  
+}

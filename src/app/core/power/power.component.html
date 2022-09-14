@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Power</h1>
+  
+    <p> Power = Voltage x Current</p>
+     <form [formGroup] = "powerForm" (ngSubmit)="submit()">
+
+        <div class = "form">
+            <label for="voltage">Voltage</label>
+            <input type="number" name="voltage" class="form-control" placeholder="Enter Voltage" formControlName="voltage" >
+        </div>
+        <pre></pre>
+        <div class = "form">
+            <label for="current">Current</label>
+            <input type="text" name="current" class="form-control" placeholder="Enter Current" formControlName="current">
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary">Submit</button>
+     </form>
+     <pre></pre>
+      <div class = "jumbotron">
+            <h1 class="display-4">Power Value:{{submit()}} watts</h1>
+           </div>
+</div>

@@ -1,0 +1,29 @@
+
+   <mat-card-content>
+        <div class="container">
+            
+            <h1>Resistance</h1>
+            <p> Resistance = Voltage / Current</p>
+            <p>For resistors in series the total reasistance is calculated by summing up the resistance
+                For example; Given resistors R1, R2, R3 the total resistance Rt = R1+R2+R3
+            </p>
+        <form [formGroup]="resistanceForm" (ngSubmit)="submit()">
+            <div class = "form-group">
+                <label for="voltage">Voltage</label>
+                <input type="text" name="voltage" class="form-control" placeholder="Enter Voltage" formControlName="voltage">
+            </div>
+            <pre></pre>
+            <div class = "form-group">
+                <label for="current">Current</label>
+                <input type="text" name="current" class="form-control" placeholder="Enter Current"formControlName="current">
+            </div>
+            <pre></pre>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+            <pre></pre>
+           <div class = "jumbotron">
+            <h1 class="display-4">Resistance Value:{{submit()}} Ohms</h1>
+           </div>
+        </div>
+    </mat-card-content>
+ 

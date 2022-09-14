@@ -1,0 +1,10 @@
+div{
+    text-align: center;
+    width: 450px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+label{
+    text-align: center;
+    color:green;
+}
