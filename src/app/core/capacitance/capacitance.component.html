@@ -1,1 +1,23 @@
-<p>capacitance works!</p>
+<div class="container">
+    <h1>Capacitance</h1>
+  
+    <p> Capacitance = Charge(q) / voltage(V)</p>
+     <form [formGroup] = "capactorForm" (ngSubmit)="onSubmit()">
+
+        <div class = "form">
+            <label for="voltage">Voltage</label>
+            <input type="text" name="voltage" class="form-control" placeholder="Enter Voltage" formControlName="voltage" >
+        </div>
+        <pre></pre>
+        <div class = "form">
+            <label for="charge">Charge</label>
+            <input type="text" name="charge" class="form-control" placeholder="Enter Charge" formControlName="charge">
+        </div>
+        <pre></pre>
+        <button class="btn btn-primary">Submit</button>
+     </form>
+     <pre></pre>
+      <div class = "jumbotron">
+            <h1 class="display-4">Capacitance Value = {{onSubmit()}} Farads</h1>
+           </div>
+</div>
