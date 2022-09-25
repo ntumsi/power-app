@@ -1,12 +1,7 @@
 
    <mat-card-content>
         <div class="container">
-            
-            <h1>Resistance</h1>
-            <p> Resistance = Voltage / Current</p>
-            <p>For resistors in series the total reasistance is calculated by summing up the resistance
-                For example; Given resistors R1, R2, R3 the total resistance Rt = R1+R2+R3
-            </p>
+           
         <form [formGroup]="resistanceForm" (ngSubmit)="submit()">
             <div class = "form-group">
                 <label for="voltage">Voltage</label>

@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+    width: 450px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+label{
+    text-align: center;
+     color:green;
+}
+h1{
+    color:rgb(165, 42, 155);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

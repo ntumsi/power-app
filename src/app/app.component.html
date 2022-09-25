@@ -1,9 +1,6 @@
 
-    <mat-card-content>
-    
-        <app-header></app-header>
-  
-      
+      <!-- <app-header></app-header> -->
+    <mat-card-content> 
         <!-- <app-power></app-power>
         <hr>
         <pre></pre>
@@ -12,10 +9,62 @@
         <app-current></app-current>
         <pre></pre>
         <br> -->
-        <router-outlet></router-outlet>
+        <div class="grouped">
+          <div class="group-item1">
+            <mat-card>
+
+              <div class="content">
+                  <h1>Power</h1>
+              </div>
+              <div class="content">
+                <app-power></app-power>
+              </div>
+            </mat-card>
+  
+          </div>
+          <div class="group-item2">
+            <mat-card>
+
+              <div class="content">
+                  <h1>Resistance</h1>
+              </div>
+              <div class="content">
+                <p> Resistance = Voltage / Current</p>
+                <p>For resistors in series the total reasistance is calculated by summing up the resistance
+                    For example; Given resistors R1, R2, R3 the total resistance Rt = R1+R2+R3
+                </p>
+                <app-resistance></app-resistance>
+              </div>
+            </mat-card>
+          </div>
+          <div class="group-item3">
+            <mat-card>
+
+              <div class="content">
+                  <h1>Current</h1>
+              </div>
+              <div class="content">
+                <app-current></app-current>
+              </div>
+            </mat-card>
+          </div>
+          <div class="group-item4">
+            <mat-card>
+
+              <div class="content">
+                  <h1>Capacitance</h1>
+              </div>
+              <div class="content">
+                  <app-capacitance></app-capacitance>
+              </div>
+            </mat-card>
+          </div>
+      </div>
+        <!-- <router-outlet></router-outlet> -->
         
       </mat-card-content>
        
           
-       <app-footer></app-footer>
+       <!-- <app-footer></app-footer> -->
+
        
